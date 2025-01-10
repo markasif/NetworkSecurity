@@ -3,3 +3,8 @@ numpy
 pandas
 matplotlib
 flask
+pymongo
+certifi
+
+
+##-e.
