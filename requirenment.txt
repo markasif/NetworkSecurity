@@ -3,6 +3,7 @@ numpy
 pandas
 matplotlib
 flask
+ pymongo[srv]==3.6
 pymongo
 certifi
 

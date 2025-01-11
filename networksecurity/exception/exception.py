@@ -1,7 +1,5 @@
 import sys
-from networksecurity.logging import logger
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))  # Adds the root directory to sys.path
-
+from networksecurity.logging.logger import logging
 
 class NetworkSecurityException(Exception):
     def __init__(self, error_message,error_details:sys):
@@ -14,11 +12,10 @@ class NetworkSecurityException(Exception):
     def __str__(self):
         return "Error Occur in Python  Script Name [{0}] line number [{1}] error message [{2}]".format(
         self.file_name,self.lineno,str(self.error_message))
-
-if __name__ == "__main__":
+if __name__ =="__main__":
     try:
-        logger.logging("Entered in try block")
         a=1/0
-        print("This will not be Printed",a)
+        logging.info("Entered the try block")
+        print("this will not be printed")
     except Exception as e:
         raise NetworkSecurityException(e,sys)
