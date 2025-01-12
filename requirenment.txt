@@ -3,9 +3,9 @@ numpy
 pandas
 matplotlib
 flask
- pymongo[srv]==3.6
+pymongo[srv]==3.6
 pymongo
 certifi
-
+scikit-learn
 
 ##-e.
