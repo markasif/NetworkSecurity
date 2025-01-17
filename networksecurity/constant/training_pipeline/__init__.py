@@ -16,6 +16,8 @@ FILE_NAME : str = "PhisingData.csv"
 TRAIN_FILE_NAME : str = "train.csv"
 TEST_FILE_NAME : str = "test.csv"
 SCHEMA_FILE_PATH = os.path.join("data_schema", "schema.yml")
+SAVED_MODEL_DIR = os.path.join("saved_models")
+MODEL_FILE_NAME = "model.pkl"
 """
 Data Ingesstion related constant start with DATA_INGESTION VAR NAME
 """
@@ -47,3 +49,11 @@ DATA_TRANSFORMED_IMPUTER_PARAMS : dict = {
     "weights" : "uniform"
 
 }
+
+"""Model Trainer related constant start with MODE Trainer Var NAme"""
+
+MODEL_TRAINER_DIR_NAME :str = "model_trainer"
+MODEL_TRAINER_TRAINED_DIR :str = "trained_model"
+MODEL_TRAINER_TRAINED_DIR_NAME :str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE : float = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THERSHOLD : str = 0.05
